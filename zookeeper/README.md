@@ -30,4 +30,8 @@ winpty docker-compose exec zoo1 bin/zkCli.sh -server localhost:2181,zoo2:2181,zo
 winpty docker-compose exec zoo1 bin/zkCli.sh -server localhost:2181,zoo2:2181,zoo3:2181 delete -s //helloworld
 ```
 
+### Stat listing
 
+```bash
+winpty docker-compose exec zoo1 bin/zkCli.sh -server localhost:2181,zoo2:2181,zoo3:2181 stat //zookeeper
+```
